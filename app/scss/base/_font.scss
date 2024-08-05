@@ -1,0 +1,44 @@
+@import url('https://use.typekit.net/hzu5acq.css');
+
+body.admin-logged,
+body.admin-logged * {
+  font-family: 'brandon-grotesque', sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 300 !important;
+  font-style: normal;
+}
+
+body.admin-logged {
+  .blank-mode .cart-related-name,
+  .blank-mode .cart-table .main-link,
+  .blank-mode .h1,
+  .blank-mode .h2,
+  .blank-mode .h3,
+  .blank-mode .h4,
+  .blank-mode .h5,
+  .blank-mode .h6,
+  .blank-mode h1,
+  .blank-mode h2,
+  .blank-mode h3,
+  .blank-mode h4,
+  .blank-mode h5,
+  .blank-mode h6,
+  .cart-related-name,
+  .cart-table .main-link,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'brandon-grotesque', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+}

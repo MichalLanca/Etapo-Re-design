@@ -1,0 +1,64 @@
+body.admin-logged {
+  .signs {
+    height: 90px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin: 32px auto 40px;
+
+    div {
+      height: 90px;
+      width: 25%;
+
+      h3 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      svg {
+        height: 40px;
+        width: auto;
+      }
+
+      &.truck svg {
+        height: 48px;
+        width: auto;
+      }
+
+      @media only screen and (max-width: $breakpoint-sm) {
+        svg {
+          height: 32px;
+        }
+
+        h3 {
+          font-size: 16px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+      display: block;
+      height: auto;
+
+      div {
+        height: auto;
+        width: auto;
+        margin-bottom: 56px;
+      }
+    }
+
+    @media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+      display: grid;
+      height: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 10px;
+      margin: 56px auto 0 0;
+
+      div {
+        height: auto;
+        width: auto;
+        margin-bottom: 56px;
+      }
+    }
+  }
+}

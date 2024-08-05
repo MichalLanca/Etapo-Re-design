@@ -1,0 +1,203 @@
+body.admin-logged {
+  #carousel {
+    max-height: 480px;
+    overflow: hidden;
+  }
+
+  #homepageProducts6 {
+    h2.header {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+      h2.header {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+      h2.header {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+body.admin-logged.desktop div#homepageProducts12.tab-pane.fade {
+  background: none;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+body.admin-logged.desktop div#products-12 {
+  max-width: 100%;
+
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+}
+
+body.admin-logged {
+  .products-block {
+    overflow: visible;
+    display: flex;
+
+    .slick-list {
+      @media (min-width: 992px) {
+        padding: 0;
+        margin: 0 -15px;
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .slick-prev {
+      left: -60px !important;
+    }
+
+    .slick-next {
+      right: -32px !important;
+    }
+
+    .product {
+      padding: 14px;
+
+      .p {
+        border: none;
+        box-shadow: none;
+
+        .image {
+          border: 2px solid #d2adb698;
+        }
+
+        .p-in {
+          background: transparent;
+
+          .p-in-in {
+            margin: 6px 0 6px 0;
+
+            @media only screen and (max-width: $breakpoint-md) {
+              margin: 4px 0 4px 0;
+            }
+
+            .name {
+              text-align: left;
+              font-size: 20px;
+              text-transform: none;
+              padding: 0;
+
+              span {
+                font-weight: 600;
+              }
+
+              @media only screen and (max-width: $breakpoint-sm) {
+                font-size: 16px;
+              }
+
+              @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+                font-size: 20px;
+              }
+            }
+          }
+
+          .p-bottom {
+            padding: 0;
+
+            div {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .prices {
+                width: 50%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+
+                .price {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  p {
+                    font-size: 18px;
+                    margin: 0;
+
+                    @media only screen and (max-width: $breakpoint-sm) {
+                      font-size: 14px;
+                    }
+
+                    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+                      font-size: 17px;
+                    }
+                  }
+                }
+              }
+
+              .p-tools {
+                width: 50%;
+                padding: 0;
+                height: 100%;
+
+                .btn,
+                .btn.btn-cart,
+                > .btn:last-child {
+                  background-color: transparent;
+                  color: #363636;
+                  border-bottom: none;
+                  text-align: right;
+                  min-width: auto;
+                  width: 100%;
+                  margin: 0;
+                  font-size: 15px;
+                  text-transform: none;
+
+                  span {
+                    text-decoration: underline;
+                  }
+
+                  @media only screen and (max-width: $breakpoint-md) {
+                    font-size: 12px;
+                  }
+
+                  @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+body.admin-logged {
+  @media (min-width: 1200px) {
+    .breadcrumbs,
+    .index-content-wrapper,
+    .next-to-carousel-banners,
+    .ordering-process .content-wrapper-in,
+    .p-detail-inner,
+    .p-detail-tabs-wrapper,
+    .type-category .content,
+    .type-glossary .content-wrapper-in,
+    .type-manufacturer-detail .content-wrapper-in,
+    .type-manufacturers-listing .content-wrapper-in,
+    .type-page .content-wrapper-in,
+    .type-post .content-wrapper-in,
+    .type-posts-listing .content-wrapper-in,
+    .type-search .content-wrapper-in {
+      max-width: 1720px;
+    }
+  }
+}

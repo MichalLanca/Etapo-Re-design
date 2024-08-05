@@ -1,0 +1,303 @@
+body.admin-logged {
+  .logo-sem {
+    position: relative;
+    width: 100% !important;
+    max-width: 1720px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: auto;
+    padding: 0;
+    margin: 24px auto 0;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+      margin: 0;
+    }
+
+    .site-name,
+    .instagram-logo,
+    .navigation-buttons {
+      flex: 1;
+
+      @media only screen and (max-width: $breakpoint-lg) {
+        flex: none;
+        z-index: 1001;
+      }
+    }
+
+    .instagram-logo {
+      padding: 0;
+      margin: 0;
+      width: fit-content;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      @media only screen and (max-width: $breakpoint-lg) {
+        display: none;
+      }
+    }
+
+    .site-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+      }
+
+      @media only screen and (max-width: $breakpoint-lg) {
+        margin-top: 1rem;
+
+        img {
+          max-height: 80px;
+        }
+      }
+    }
+
+    .navigation-buttons {
+      margin: 0;
+
+      @media only screen and (max-width: $breakpoint-lg) {
+        position: relative;
+      }
+
+      a[data-target='cart'],
+      a[data-target='login'],
+      a[data-target='search'],
+      a[data-target='navigation'] {
+        color: #4a4a4a;
+        background-color: transparent;
+        border: none;
+        width: 30px;
+        margin-left: 30px;
+
+        @media only screen and (max-width: $breakpoint-lg) {
+          color: #4a4a4a;
+          background-color: transparent !important;
+          border: none;
+          margin-left: 18px;
+
+          svg {
+            height: 20px;
+          }
+        }
+
+        @media only screen and (min-width: $breakpoint-lg) {
+          svg {
+            height: 20px;
+          }
+        }
+      }
+    }
+
+    .navigation-buttons a[data-target='cart']:before,
+    a[data-target='login']:before,
+    a[data-target='search']:before,
+    a[data-target='navigation']:before {
+      display: none;
+    }
+  }
+
+  #header {
+    .container {
+      background: transparent;
+      border-top: 2px solid #d2adb6;
+      border-bottom: 2px solid #d2adb6;
+      margin: 0 auto 32px;
+
+      @media only screen and (max-width: $breakpoint-lg) {
+        border-bottom: none;
+      }
+
+      #navigation {
+        @media (min-width: 992px) {
+          height: 65px;
+        }
+        @media only screen and (max-width: $breakpoint-lg) {
+          padding-top: 100px;
+        }
+        background-color: #ffffff;
+
+        .navigation-in {
+          width: 100%;
+
+          @media only screen and (max-width: $breakpoint-lg) {
+            height: 365px;
+            background-color: #f1f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #d2adb6;
+            border-top: 2px solid #d2adb6;
+
+            ul:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          ul {
+            background: transparent;
+            justify-content: center !important;
+
+            li {
+              visibility: visible;
+
+              .submenu-arrow:after {
+                color: #161616;
+                padding-bottom: 2px;
+                transition: transform 0.2s ease-out;
+              }
+
+              a {
+                text-align: center;
+                padding-bottom: 24px;
+                padding-top: 24px;
+
+                @media only screen and (max-width: $breakpoint-lg) {
+                  padding: 20px 8px;
+                  border-bottom: 2px solid #d2adb614;
+                }
+
+                &:hover {
+                  background-color: #d2adb6;
+                  color: #fff !important;
+
+                  b {
+                    color: #fff !important;
+                  }
+                }
+
+                b {
+                  font-size: 20px;
+                  font-weight: 600;
+                  color: #161616;
+                  text-transform: none;
+
+                  @media only screen and (max-width: $breakpoint-sm) {
+                    font-size: 20px;
+                  }
+
+                  @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
+                    font-size: 23px;
+                  }
+                }
+              }
+
+              &:last-child a {
+                @media only screen and (max-width: $breakpoint-lg) {
+                  border-bottom: none;
+                }
+              }
+
+              &.exp {
+                .submenu-arrow:after {
+                  color: #fff;
+                  padding-bottom: 2px;
+                }
+
+                a {
+                  background-color: #d2adb6;
+                  color: #fff !important;
+
+                  b {
+                    color: #fff !important;
+                  }
+                }
+
+                ul {
+                  top: 100%;
+                  border-color: #d2adb6;
+                  background-color: #d2adb6;
+
+                  li a {
+                    font-size: 18px;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .menu-helper {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .navigation-buttons {
+      background: transparent;
+      width: auto;
+    }
+  }
+
+  @media (min-width: 992px) {
+    #header.scrolled {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 1002;
+      padding-left: 120px !important;
+      padding-right: 120px !important;
+      animation: smoothScroll 1s forwards;
+      max-width: unset;
+
+      .logo-sem {
+        margin-top: 0;
+      }
+
+      .site-name img {
+        max-height: 65px;
+      }
+
+      .container {
+        margin-bottom: 0;
+      }
+
+      .navigation-in.menu::before {
+        content: '';
+        background-image: url('https://cdn.myshoptet.com/usr/www.etapo.cz/user/logos/etapo_500x500.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        left: 8px;
+        top: -4px;
+      }
+
+      #navigation .navigation-in ul {
+        justify-content: flex-end !important;
+      }
+
+      @keyframes smoothScroll {
+        0% {
+          transform: translateY(-40px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+}
+
+.overall-wrapper {
+  position: relative;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

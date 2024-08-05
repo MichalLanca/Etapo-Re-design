@@ -1,0 +1,9 @@
+body.admin-logged {
+  #footer {
+    background: #d2adb6 !important;
+
+    &::before {
+      display: none !important;
+    }
+  }
+}

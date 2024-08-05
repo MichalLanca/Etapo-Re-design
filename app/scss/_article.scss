@@ -1,0 +1,34 @@
+body.admin-logged {
+  article.article {
+    padding: 100px 150px 100px 150px;
+
+    .wrapper-article {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 700px;
+        height: 520px;
+      }
+
+      .text {
+        width: 50%;
+        height: auto;
+        padding: 60px;
+
+        h2 {
+          font-size: 32px;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .wrapping {
+      margin-bottom: 80px;
+    }
+  }
+}

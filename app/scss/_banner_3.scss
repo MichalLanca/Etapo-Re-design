@@ -1,0 +1,110 @@
+body.admin-logged {
+  .container-b {
+    margin: 100px auto;
+    max-width: 1420px;
+    height: auto;
+    background: #e9d7db;
+    display: flex;
+    border-radius: 8px;
+    min-height: 735px;
+    height: 100%;
+
+    .left-side {
+      width: 50%;
+      height: auto;
+      margin: 6% 0% 6% 6%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        margin: auto 0;
+
+        h3 {
+          width: 70%;
+          font-size: 32px;
+          font-weight: 600;
+          color: #161616;
+          margin-top: 0;
+          margin-bottom: 32px;
+          margin-right: auto;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          width: 70%;
+          margin-bottom: 6%;
+          margin-right: auto;
+        }
+
+        a {
+          width: 268px;
+          height: 57px;
+          background: #4e4e4e;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: white;
+          margin-right: auto;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .right-side {
+      display: flex;
+      margin: 2%;
+      width: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+    }
+
+    @media only screen and (max-width: $breakpoint-lg) {
+      display: block;
+      height: auto;
+      margin: 0 0 50px 0;
+
+      .left-side {
+        width: 100%;
+        padding: 30px;
+        margin: 0;
+
+        div {
+          text-align: center;
+
+          h3 {
+            font-size: 24px;
+            width: 100%;
+          }
+
+          p {
+            font-size: 16px;
+            width: 100%;
+          }
+
+          a {
+            margin: 0 auto;
+          }
+
+          img {
+            width: 100%;
+            bottom: 30px;
+            position: relative;
+          }
+        }
+      }
+
+      .right-side {
+        display: none;
+      }
+    }
+  }
+}
